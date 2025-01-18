@@ -32,7 +32,7 @@ function Services() {
       <Typography variant='body1'>
         Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.
       </Typography>
-      <Grid2 container spacing={5} mt={5}>
+      <Grid2 container spacing={5} mt={10}>
         {services.map((service, index) => (
           <Grid2 size={{ xs: 12, sm: 6, md: 3 }} key={index} sx={{ textAlign: 'start' }}>
             <img src={service.icon} alt={service.title} className='img-fluid mb-4' />

@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import Services from './Services'
+import Projects from './Projects'
 
 function HomeScreen() {
   return (
@@ -15,6 +16,7 @@ function HomeScreen() {
         </div>
       </Box>
       <Services />
+      <Projects />
     </div>
   )
 }
