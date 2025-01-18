@@ -7,7 +7,7 @@ export const mainTheme = createTheme({
       light: '#FDAC1A', // yellow
     },
     common: {
-      white: '#F7F7F7',
+      white: '#F8F8F8',
       black: '#1F1F1F',
     },
     text: {
