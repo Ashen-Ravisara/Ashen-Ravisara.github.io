@@ -51,7 +51,7 @@ function Projects() {
   ]
 
   return (
-    <div>
+    <div id='portfolio'>
       <Box sx={{ backgroundColor: 'common.black' }} py={10} pb={25}>
         <div className='container px-5'>
           <Typography variant='h4' color='common.white' fontWeight='bold' textAlign='center' gutterBottom mb={3}>

@@ -25,7 +25,7 @@ function Services() {
   ]
 
   return (
-    <div className="container my-5 py-5">
+    <div className="container my-5 py-5" id='services'>
       <Typography variant='h4' fontWeight='bold' gutterBottom mb={3}>
         Services
       </Typography>
