@@ -56,11 +56,7 @@ function Navbar() {
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
-              width: '75%',
-              backgroundColor: 'common.white',
-              backgroundImage: 'url(/Images/DrawerBg.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundPositionY: 'bottom',
+              width: '75%'
             },
           }}
         >
@@ -72,17 +68,15 @@ function Navbar() {
           <Box display='flex' flexDirection='column' justifyContent='space-between' px={4} pt={4} pb={5} height='100%'>
             <div>
               <img src='Images/LogoBlack.png' alt='Logo' className='img-fluid' width={70} />
-              <Box display='flex' flexDirection='column' alignItems='start' gap={3} mt={4} color='primary.main'>
-                <List>
-                  {navLinks.map((link, index) => (
-                    <ListItem key={index} disablePadding>
-                      <ListItemButton onClick={() => handleDrawerClick()} href={link.path} >
-                        <ListItemText primary={link.label} slotProps={{ primary: { fontWeight: 'bold', color: 'primary.main' } }} />
-                      </ListItemButton>
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
+              <List sx={{ mt: 4 }}>
+                {navLinks.map((link, index) => (
+                  <ListItem key={index} disablePadding sx={{ mb: 2 }}>
+                    <ListItemButton onClick={() => handleDrawerClick()} href={link.path} >
+                      <ListItemText primary={link.label} slotProps={{ primary: { fontWeight: 'bold', color: 'primary.main' } }} />
+                    </ListItemButton>
+                  </ListItem>
+                ))}
+              </List>
               <Button href='#contact' variant='contained' sx={{ borderRadius: '16px' }}>
                 Lets Talk
               </Button>
@@ -102,6 +96,10 @@ function Navbar() {
               </IconButton>
             </div>
           </Box>
+          <img
+            src='/Images/DrawerBg.png' alt='Drawer bg' className='img-fluid'
+            style={{ width: '50vw', position: 'absolute', bottom: 0, left: 0 }}
+          />
         </Drawer>
       </nav>
     </>

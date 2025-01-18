@@ -31,7 +31,7 @@ function Contact() {
         </div>
       </div>
       <Box sx={{ position: 'absolute', bottom: 0, right: 0, display: { xs: 'none', sm: 'block' } }}>
-        <img src='/Images/ContactBg.png' alt='contact bg' className='img-fluid' style={{ transform: 'translateY(30%)' }} />
+        <img src='/Images/ContactBg.png' alt='contact bg' className='img-fluid' style={{ width:'20vw', transform: 'translateY(30%)' }} />
       </Box>
     </div>
   )
