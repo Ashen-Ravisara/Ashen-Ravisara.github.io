@@ -1,4 +1,4 @@
-import { Grid2, Typography } from "@mui/material"
+import { Box, Grid2, Typography } from "@mui/material"
 
 function Services() {
   const services = [
@@ -25,7 +25,7 @@ function Services() {
   ]
 
   return (
-    <div className="container my-5 py-5" id='services'>
+    <Box className="container my-5 py-5" sx={{ px: { xs: 5, sm: 0 } }} id='services'>
       <Typography variant='h4' fontWeight='bold' gutterBottom mb={3}>
         Services
       </Typography>
@@ -41,7 +41,7 @@ function Services() {
           </Grid2>
         ))}
       </Grid2>
-    </div>
+    </Box>
   )
 }
 
