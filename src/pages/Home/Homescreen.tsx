@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import Services from './Services'
 import Projects from './Projects'
+import Contact from './Contact'
 import About from './About'
 
 function HomeScreen() {
@@ -9,6 +10,7 @@ function HomeScreen() {
       <About />
       <Services />
       <Projects />
+      <Contact />
     </div>
   )
 }
