@@ -2,7 +2,7 @@
 import { Box, ListItemButton, ListItemText, Typography } from '@mui/material'
 
 function Footer() {
-  
+
   const navLinks = [
     { path: '#about', label: 'About' },
     { path: '#services', label: 'Services' },
@@ -26,9 +26,10 @@ function Footer() {
           ))}
         </Box>
       </div>
-      <Typography variant='body2' textAlign='center' color='text.secondary' gutterBottom>
-        © 2021 Ashen Ravisara. All rights reserved.
+      <Typography variant='body2' textAlign='center' color='text.secondary' component='span' gutterBottom>
+        © 2025 Ashen Ravisara. All rights reserved. 
       </Typography>
+      <Typography variant='body2' textAlign='center' color='text.secondary' component='span' gutterBottom> Developed by <a href='https://minindusenadheera.github.io'>Minindu Senadheera</a></Typography>
     </Box>
   )
 }
