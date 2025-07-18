@@ -43,124 +43,164 @@ const getProjectContent = (project: Project) => {
     case 1: // Bloo Tour & Tourism
       return {
         title: "Bloo Tour & Tourism",
-        client: "Tourism Board Sri Lanka",
-        teamMember: "Ashen Ravisara - Lead UI/UX Designer",
-        year: "2024",
-        description: "A revolutionary tourism platform showcasing stunning destinations with immersive digital experiences, ancient temples, and cultural heritage sites.",
-        fullDescription: "Bloo Tour & Tourism represents a revolutionary approach to travel discovery, showcasing stunning destinations with an immersive digital experience. This comprehensive tourism platform combines breathtaking visuals of ancient temples, cultural landmarks, and natural wonders with intuitive navigation and engaging storytelling. The design seamlessly blends modern web aesthetics with cultural heritage, creating an inspiring gateway for travelers seeking authentic experiences and meaningful connections with destinations around the world.",
-        mainImage: "/images/1.png",
+        client: "LumetriX Solutions (Pvt).Ltd",
+        // teamMember: "Ashen Ravisara - Lead UI/UX Designer",
+        year: "2025",
+        // description: "A revolutionary tourism platform showcasing stunning destinations with immersive digital experiences, ancient temples, and cultural heritage sites.",
+        fullDescription: "Bloo Tour & Tourism is a responsive tourism website created to highlight the beauty of Sri Lanka’s travel destinations. Users can browse a variety of attractions—from cultural landmarks to natural wonders—while also accessing essential travel details such as available vehicles and accommodation options. The platform offers an intuitive, visually rich interface that ensures a seamless experience for travelers planning their journey. Designed with user experience at its core, the website provides clear navigation, vibrant visuals, and essential travel information all in one place.",
+        mainImage: "/Images/blootuor.png",
         designProcess: [
           {
-            title: "Research & Discovery",
-            description: "Understanding traveler behavior and tourism market needs through comprehensive research and stakeholder interviews.",
-            image: "/images/1.png"
+            title: "Web & Mobile Design",  
+            image: "/Images/BlooTourUI.png"
           },
-          {
-            title: "User Journey Mapping",
-            description: "Creating detailed user journeys to optimize the travel discovery and booking experience.",
-            image: "/images/1.png"
-          },
-          {
-            title: "Visual Identity",
-            description: "Developing a brand identity that reflects Sri Lanka's rich cultural heritage and natural beauty.",
-            image: "/images/1.png"
-          },
-          {
-            title: "Platform Design",
-            description: "Designing intuitive interfaces that showcase destinations and facilitate seamless travel planning.",
-            image: "/images/1.png"
-          }
         ]
       };
 
-    case 2: // Ethereal Commerce
+    case 2: // LumetriX Solution Landing page
       return {
-        title: "Ethereal Commerce",
-        client: "Retail Innovations Inc.",
-        teamMember: "Ashen Ravisara - Senior UX Designer",
-        year: "2024",
-        description: "A revolutionary e-commerce platform featuring AR product visualization, AI-powered recommendations, and seamless checkout experiences across all devices.",
-        fullDescription: "Ethereal Commerce revolutionizes the online shopping experience by integrating cutting-edge AR technology with AI-powered personalization. Users can virtually try on products, receive intelligent recommendations, and enjoy a seamless, immersive shopping journey that bridges the gap between physical and digital retail.",
-        mainImage: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
+        title: "LumetriX Solutions Landing page",
+        // client: "Retail Innovations Inc.",
+        // teamMember: "Ashen Ravisara - Senior UX Designer",
+        year: "2025",
+        // description: "A revolutionary e-commerce platform featuring AR product visualization, AI-powered recommendations, and seamless checkout experiences across all devices.",
+        fullDescription: "TThe Portfolio Website for LumetriX Solutions was designed to represent the company’s innovative presence in the IT industry, offering services in software development, UI/UX design, web solutions, and AI integration. The website showcases the company’s vision, service offerings, and key projects in a clean, professional layout aimed at building trust and attracting potential clients. As the UI/UX designer, I focused on creating a responsive, user-friendly interface that reflects LumetriX’s modern and forward-thinking identity. The design emphasizes intuitive navigation, service clarity, and visual consistency to ensure a seamless browsing experience for visitors. The project was developed using Figma Make, leveraging AI-powered design tools to streamline the process while maintaining a high level of quality and creativity.",
+        mainImage: "/Images/LumetrX.png",
         designProcess: [
           {
-            title: "AR Integration Research",
-            description: "Researching AR technologies and their applications in e-commerce experiences.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop"
+            title: "Web Design",
+            image: "/Images/LumerriXUI.png"
           },
-          {
-            title: "AI Personalization",
-            description: "Designing AI-powered recommendation systems for personalized shopping experiences.",
-            image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop"
-          }
         ]
       };
 
-    case 3: // Quantum Workspace
+    case 3: // Artigala Ayurveda
       return {
-        title: "Quantum Workspace",
-        client: "DesignTech Studios",
-        teamMember: "Ashen Ravisara - Design Systems Lead",
-        year: "2023",
-        description: "A comprehensive design system that creates harmony between design and development workflows.",
-        fullDescription: "Quantum Workspace is a comprehensive design system that creates harmony between design and development workflows. It provides a unified component library, design tokens, and collaboration tools that ensure consistency across all platforms while accelerating the development process.",
-        mainImage: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=800&fit=crop",
+        title: "Artigala Ayurveda",
+        client: "LumetriX Solutions (Pvt.)Ltd",
+        // teamMember: "Ashen Ravisara - Design Systems Lead",
+        year: "2025",
+        fullDescription: "Artigala Ayurveda is an e-commerce website created for the traditional wellness brand, Artigala Ayurveda. The site offers a serene and nature-inspired interface where users can explore a variety of Ayurvedic products with detailed descriptions, benefits, and usage guidance. Customers can easily browse categories, view product details, and make purchases directly through the website. The design blends modern web practices with traditional aesthetics, reflecting the brand's commitment to natural healing and holistic living.",
+        mainImage: "/public/Images/ArtigalaMain.png",
         designProcess: [
           {
-            title: "Component Architecture",
-            description: "Building a scalable component library with consistent design patterns.",
-            image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&h=800&fit=crop"
+            title: "Web Design",
+            image: "/public/Images/ArtigalaUI.png"
           }
         ]
       };
 
-    case 4: // Neural Interface
-      return {
-        title: "Neural Interface",
-        client: "AI Research Lab",
-        teamMember: "Ashen Ravisara - UX Researcher & Designer",
-        year: "2023",
-        description: "Pioneering the future of human-computer interaction through intelligent adaptive interfaces.",
-        fullDescription: "Neural Interface represents the cutting edge of human-computer interaction, utilizing advanced AI algorithms to create adaptive interfaces that learn from user behavior. The system continuously evolves to provide personalized experiences, making technology more intuitive and accessible for everyone.",
-        mainImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop",
-        designProcess: [
-          {
-            title: "AI Behavior Analysis",
-            description: "Studying user interaction patterns to inform adaptive interface design.",
-            image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=800&fit=crop"
-          }
-        ]
-      };
-
-    default: // Recruitment Agency (fallback)
+    case 4: // Recruitment Agency Web Application
       return {
         title: "Recruitment Agency Web Application",
-        client: "CodeLantic",
-        teamMember: "Ashen Ravisara - UI/UX Designer",
-        year: "2024",
-        description: "This Recruitment Agency Web Application is designed to streamline the hiring process by providing two separate portals—one for recruitment agencies and another for companies.",
-        fullDescription: "This Recruitment Agency Web Application is designed to streamline the hiring process by providing two separate portals—one for recruitment agencies and another for companies. The platform includes an integrated AI feature that allows users to generate job descriptions by simply providing a prompt, making it faster and easier to post listings. It also features a built-in chat system to enhance communication. The design focuses on creating an intuitive and organized user interface that supports a smooth workflow, clear navigation, and a modern look, ensuring both functionality and an engaging user experience.",
-        mainImage: "/images/1.png",
+        client: "Syntax Erreur (Pvt.)Ltd",
+        teamMember: "Hiran B Anuraja - UI/ UX Designer",
+        year: "2025",
+        fullDescription: "Neural Interface represents the cutting edge of human-computer interaction, utilizing advanced AI algorithms to create adaptive interfaces that learn from user behavior. The system continuously evolves to provide personalized experiences, making technology more intuitive and accessible for everyone.",
+        mainImage: "/public/Images/RecruitmentMain.png",
         designProcess: [
           {
             title: "Wire-framing",
             description: "Structuring the Experience – Reviewing Functional Specification Documents (FSDs) to create well-defined wireframes that map out user journeys and feature interactions.",
-            image: "/images/1.png"
+            image: "/public/Images/RecruitmentWireframe.png"
           },
           {
             title: "Colors",
-            description: "Defining the Visual Identity – Establishing a color palette that enhances usability, brand consistency, and accessibility across all recruitment platforms.",
-            image: "/images/1.png"
+            description: "Defining the Visual Identity – Establishing a color palette that enhances usability, brand consistency, and accessibility across all banking platforms.",
+            image: "/public/Images/RecruitmentColors.png"
           },
           {
             title: "Design System & Components",
             description: "Building Consistency – Creating a scalable design system with reusable UI components, typography, and styles for a unified digital experience.",
-            image: "/images/1.png"
+            image: "/public/Images/RecruitmentDesignSystem.png"
           },
           {
             title: "Web & Mobile Design",
-            description: "Comprehensive Interface Design – Designed responsive interfaces for both recruitment agencies and companies, ensuring seamless functionality across all devices and user types.",
-            image: "/images/1.png"
+            image: "/public/Images/RecruitmentUI.png"
+          }
+        ]
+      };
+
+    case 5: // Infinity Day Planner Web Application
+      return {
+        title: "Infinity Day Planner Web Application",
+        client: "Codelantic (Pvt.)Ltd",
+        teamMember: "Hiran B Anuraja - UI/ UX Designer",
+        year: "2024",
+        fullDescription: "IDP is a smart day planner web application developed for a Swaziland - based client, designed to simplify and optimize daily operations. The platform features two user portals - Manager and Staff - enabling efficient management of schedules, work orders, staff onboarding, route planning, leave management, and other essential day-to-day tasks. IDP helps organizations enhance productivity and coordination by providing a centralized system for planning, tracking, and managing workforce activities in real time.",
+        mainImage: "/public/Images/IDPmain.png",
+        designProcess: [
+          {
+            title: "Colors",
+            description: "Defining the Visual Identity – Establishing a color palette that enhances usability, brand consistency, and accessibility across all banking platforms.",
+            image: "/public/Images/IDPcolors.png"
+          },
+          {
+            title: "Design System & Components",
+            description: "Building Consistency – Creating a scalable design system with reusable UI components, typography, and styles for a unified digital experience.",
+            image: "/public/Images/IDPdesignSystem.png"
+          },
+          {
+            title: "Web & Mobile Design",
+            image: "/public/Images/IDPUI.png"
+          }
+        ]
+      };
+
+    case 6: // Ebos Web Application
+      return {
+        title: "EBOS Web Application",
+        client: "Codelantic (Pvt.)Ltd",
+        // teamMember: "Hiran B Anuraja - UI/ UX Designer",
+        year: "2024",
+        fullDescription: "Ebos is a comprehensive multi-industry management platform developed for a UK-based client, designed to centralize and streamline business operations. The system includes three dedicated portals—Super Admin, Manager, and Staff—each with tailored functionalities and access levels. From overseeing company-wide operations and managing teams to executing tasks and tracking performance, Ebos enables seamless collaboration and efficient workflow management across various industries, all within a single unified platform.",
+        mainImage: "/public/Images/EbosCover.png",
+        designProcess: [
+          {
+            title: "Wireframes",
+            description: "Structuring the Experience – Reviewing Functional Specification Documents (FSDs) to create well-defined wireframes that map out user journeys and feature interactions.",
+            image: "/public/Images/EbosWireframe.png"
+          },
+          {
+            title: "Colors",
+            description: "Defining the Visual Identity – Establishing a color palette that enhances usability, brand consistency, and accessibility across all banking platforms.",
+            image: "/public/Images/EbosColors.png"
+          },
+          {
+            title: "Web & Mobile Design",
+            image: "/public/Images/EbosUI.png"
+          }
+        ]
+      };
+
+    case 7: // Redwood Cabins Landing Page
+      return {
+        title: "Readwood Cabins",
+        client: "Metafuse (Pvt.)Ltd",
+        // teamMember: "Hiran B Anuraja - UI/ UX Designer",
+        year: "2024",
+        fullDescription: "Readwood Cabins is a modern hotel booking website built for the Readwood Cabins resort. The platform allows users to view detailed information about available rooms, including amenities, pricing, and images, helping them make informed decisions. With a smooth booking process integrated into the site, guests can reserve accommodations directly through the website. The design focuses on simplicity and elegance, ensuring an effortless user journey from browsing to booking.",
+        mainImage: "/public/Images/RedwoodMain.png",
+        designProcess: [
+          {
+            title: "Web Design",
+            image: "/public/Images/RedwoodUI.png"
+          }
+        ]
+      };
+
+    case 8: // Gamification Education Website
+      return {
+        title: "Gamification Education Website",
+        // client: "Metafuse (Pvt.)Ltd",
+        teamMember: "Hiran B Anuraja - UI/ UX Designer",
+        year: "2024",
+        fullDescription: "The Gamification Education Website was developed as part of our university final year research project to teach the C programming language to first-year students through a gamified approach. The platform features interactive lessons, challenges, and progress tracking, making the learning experience more engaging and effective. As the UI/UX designer, I focused on creating an intuitive and visually appealing interface that enhances user engagement and ensures a seamless user experience. The design emphasizes clarity, usability, and an easy navigation flow to help students stay motivated and progress through the learning material effortlessly.",
+        mainImage: "/public/Images/GamificationCover.png",
+        designProcess: [
+          {
+            title: "Web Design",
+            image: "/public/Images/GamificationUI.png"
           }
         ]
       };

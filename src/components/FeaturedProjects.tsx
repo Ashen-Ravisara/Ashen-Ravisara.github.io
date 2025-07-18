@@ -8,81 +8,42 @@ const projects = [
   {
     id: 1,
     title: "Bloo Tour & Tourism",
-    subtitle: "Immersive Travel Discovery Platform",
-    category: "Tourism & Travel",
-    year: "2024",
-    image: "/images/1.png",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
+    category: "Landing Pages",
+    year: "2025",
+    image: "/public/Images/blootuor.png",
     color: "#FF6B35",
-    description: "A revolutionary tourism platform showcasing stunning destinations with immersive digital experiences, ancient temples, and cultural heritage sites.",
-    fullDescription: "Bloo Tour & Tourism represents a revolutionary approach to travel discovery, showcasing stunning destinations with an immersive digital experience. This comprehensive tourism platform combines breathtaking visuals of ancient temples, cultural landmarks, and natural wonders with intuitive navigation and engaging storytelling. The design seamlessly blends modern web aesthetics with cultural heritage, creating an inspiring gateway for travelers seeking authentic experiences and meaningful connections with destinations around the world.",
-    technologies: ["React", "Next.js", "Framer Motion", "Tailwind CSS", "WebGL"],
-    client: "Tourism Board Sri Lanka",
-    duration: "5 months",
-    role: "Lead UI/UX Designer",
-    images: [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    description: "Bloo Tour & Tourism is a responsive website that showcases Sri Lanka’s attractions with easy navigation and essential travel info.",
   },
   {
     id: 2,
-    title: "Ethereal Commerce",
-    subtitle: "Next-Gen E-commerce Experience",
-    category: "Mobile App",
-    year: "2024",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
+    title: "LumetriX Solution Landing page",
+    subtitle: "Tool : Figma Make (AI-powered design)",
+    category: "Landing Pages",
+    year: "2025",
+    image: "/public/Images/LumetrX.png",
     color: "#8b5cf6",
-    description: "Redefining online shopping with immersive AR try-ons and AI-powered personalized recommendations.",
-    fullDescription: "Ethereal Commerce revolutionizes the online shopping experience by integrating cutting-edge AR technology with AI-powered personalization. Users can virtually try on products, receive intelligent recommendations, and enjoy a seamless, immersive shopping journey that bridges the gap between physical and digital retail.",
-    technologies: ["React Native", "ARKit", "TensorFlow", "Firebase", "Stripe"],
-    client: "Retail Innovations Inc.",
-    duration: "8 months",
-    role: "Senior UX Designer",
-    images: [
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop"
-    ]
+    description: "LumetriX Solutions is a modern portfolio website showcasing IT services with a clean, responsive design built using Figma Make.",
   },
   {
     id: 3,
-    title: "Quantum Workspace",
-    subtitle: "Collaborative Design System",
-    category: "Design System",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=800&fit=crop",
-    color: "#06b6d4",
-    description: "A unified design system that bridges the gap between design and development teams across platforms.",
-    fullDescription: "Quantum Workspace is a comprehensive design system that creates harmony between design and development workflows. It provides a unified component library, design tokens, and collaboration tools that ensure consistency across all platforms while accelerating the development process.",
-    technologies: ["Figma", "Storybook", "React", "Vue", "Angular"],
-    client: "DesignTech Studios",
-    duration: "4 months",
-    role: "Design Systems Lead",
-    images: [
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&h=800&fit=crop"
-    ]
+    title: "Artigala Ayurveda",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
+    category: "Web Applications",
+    year: "2025",
+    image: "/public/Images/ArtigalaAyurvedaCover.png",
+    color: "#60BB01",
+    description: "Artigala Ayurveda is a nature-inspired e-commerce website for Ayurvedic products, offering easy browsing, detailed info, and a smooth shopping experience.",
   },
   {
     id: 4,
-    title: "Neural Interface",
-    subtitle: "AI-Powered User Experience",
-    category: "AI/ML",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop",
-    color: "#f59e0b",
-    description: "Pioneering the future of human-computer interaction through intelligent adaptive interfaces.",
-    fullDescription: "Neural Interface represents the cutting edge of human-computer interaction, utilizing advanced AI algorithms to create adaptive interfaces that learn from user behavior. The system continuously evolves to provide personalized experiences, making technology more intuitive and accessible for everyone.",
-    technologies: ["Python", "TensorFlow", "React", "WebGL", "WebAssembly"],
-    client: "AI Research Lab",
-    duration: "12 months",
-    role: "UX Researcher & Designer",
-    images: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=800&fit=crop"
-    ]
+    title: "Recruitment Agency Web Application",
+    subtitle: "All rights reserved by Syntax Erreur (Pvt.)Ltd",
+    category: "Web Applications",
+    year: "2025",
+    image: "/public/Images/RecruitmentCover.png",
+    color: "#294BFF",
+    description: "Recruitment Agency Web App is a dual-portal platform for agencies and companies, featuring AI-generated job descriptions and built-in chat. It offers a clean, intuitive interface for a smooth and efficient hiring process.",
   }
 ];
 
@@ -90,39 +51,23 @@ const projects = [
 const additionalProjects = [
   {
     id: 5,
-    title: "Stellar Banking",
-    subtitle: "Digital Finance Revolution",
-    category: "Fintech",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=800&fit=crop",
-    color: "#10b981",
-    description: "Transforming traditional banking with seamless digital experiences and innovative financial tools.",
-    fullDescription: "Stellar Banking transforms traditional financial services through innovative digital solutions. The platform offers seamless banking experiences, advanced financial analytics, and cutting-edge security features that meet the evolving needs of modern consumers and businesses.",
-    technologies: ["React", "Node.js", "Blockchain", "PostgreSQL", "AWS"],
-    client: "FinTech Innovations",
-    duration: "10 months",
-    role: "Principal Designer",
-    images: [
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=800&fit=crop"
-    ]
+    title: "Infinity Day Planner Web Application",
+    subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
+    category: "Web Applications",
+    year: "2025",
+    image: "/public/Images/IDPcover.png",
+    color: "#01375B",
+    description: "IDP is a smart day planner for a Swaziland client featuring Manager and Staff portals for streamlined scheduling, work orders, route planning, and more.",
   },
   {
     id: 6,
-    title: "Aurora Health",
-    subtitle: "Healthcare Innovation Platform",
-    category: "Healthcare",
-    year: "2022",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=800&fit=crop",
-    color: "#ef4444",
-    description: "Revolutionary healthcare platform that connects patients, doctors, and care providers in one seamless ecosystem.",
-    fullDescription: "Aurora Health creates a comprehensive healthcare ecosystem that seamlessly connects patients, healthcare providers, and medical institutions. The platform streamlines appointment scheduling, medical records management, and telemedicine services while ensuring the highest standards of privacy and security.",
-    technologies: ["Vue.js", "Python", "MongoDB", "Docker", "Kubernetes"],
-    client: "HealthCare Systems Ltd.",
-    duration: "14 months",
-    role: "Lead UX Designer",
-    images: [
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=800&fit=crop"
-    ]
+    title: "EBOS Web Application",
+    subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
+    category: "Web Applications",
+    year: "2025",
+    image: "/public/Images/EBOScover.png",
+    color: "#5F9D9F",
+    description: "Ebos is a multi-industry management platform with Super Admin, Manager, and Staff portals, built to streamline operations and boost team collaboration for a UK-based client.",
   }
 ];
 

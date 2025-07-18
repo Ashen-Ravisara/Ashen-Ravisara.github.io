@@ -11,7 +11,6 @@ interface Project {
   category: string;
   year: string;
   color: string;
-  tags: string[];
 }
 
 interface AllProjectsProps {
@@ -23,168 +22,84 @@ const allProjects: Project[] = [
   {
     id: 1,
     title: "Bloo Tour & Tourism",
-    subtitle: "Immersive Travel Discovery Platform",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
     description: "A revolutionary tourism platform showcasing stunning destinations with immersive digital experiences, ancient temples, and cultural heritage sites.",
-    image: "figma:asset/39290fd8ff4982636c4862da5fc112cbf6c51e60.png",
+    image: "/public/Images/blootuor.png",
     category: "Landing pages",
     year: "2024",
     color: "#FF6B35",
-    tags: ["React", "Next.js", "Framer Motion", "Tailwind CSS", "WebGL"]
   },
   {
     id: 2,
-    title: "Ethereal Commerce",
-    subtitle: "Next-Gen E-commerce Experience",
+    title: "LumetriX Solution Landing page",
+    subtitle: "Tool Used: Figma Make",
     description: "A revolutionary e-commerce platform featuring AR product visualization, AI-powered recommendations, and seamless checkout experiences across all devices.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
-    category: "Mobile Apps",
+    image: "/public/Images/LumetrX.png",
+    category: "Web Applications",
     year: "2024",
     color: "#8b5cf6",
-    tags: ["React Native", "AR Kit", "Node.js", "MongoDB", "Stripe"]
   },
   {
     id: 3,
-    title: "Quantum Workspace",
-    subtitle: "Collaborative Design System",
+    title: "Artigala Ayurveda",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
     description: "A comprehensive design system and collaboration platform for distributed teams, featuring real-time co-editing, version control, and design token management.",
-    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=800&fit=crop",
+    image: "/public/Images/ArtigalaAyurvedaCover.png",
     category: "Web Applications",
     year: "2023",
-    color: "#06b6d4",
-    tags: ["Figma", "React", "Storybook", "Design Tokens", "TypeScript"]
+    color: "#FF6B35",
   },
   {
     id: 4,
-    title: "Neural Interface",
-    subtitle: "AI-Powered User Experience",
+    title: "Recruitment Agency Web Application",
+    subtitle: "Tool Used: Figma Make",
     description: "Pioneering the future of human-computer interaction through intelligent adaptive interfaces that learn from user behavior and continuously evolve.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop",
+    image: "/public/Images/RecruitmentCover.png",
     category: "Web Applications",
     year: "2023",
-    color: "#f59e0b",
-    tags: ["Python", "TensorFlow", "React", "WebGL", "WebAssembly"]
+    color: "#294BFF",
   },
   {
     id: 5,
-    title: "Recruitment Agency Web Application",
-    subtitle: "AI-Powered Recruitment Platform",
+    title: "Infinity Day Planner Web Application",
+    subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
     description: "A comprehensive recruitment platform with dual portals for agencies and companies, featuring AI job description generation and integrated chat system.",
-    image: "figma:asset/4c0f3bb56fde0347ca60b75c703b4b9024d0b0cb.png",
+    image: "/public/Images/IDPcover.png",
     category: "Web Applications",
     year: "2024",
-    color: "#6366f1",
-    tags: ["React", "TypeScript", "AI/ML", "Chat System", "Portal Design"]
+    color: "#01375B",
   },
   {
     id: 6,
-    title: "Aurora Banking",
-    subtitle: "Digital Finance Revolution",
+    title: "EBOS Web Application",
+    subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
     description: "A next-generation banking app that combines traditional financial services with modern UX principles, featuring biometric authentication and AI-powered financial insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
+    image: "/public/Images/EBOScover.png",
     category: "Mobile Apps",
     year: "2023",
-    color: "#10b981",
-    tags: ["Flutter", "Blockchain", "AI/ML", "Biometrics", "Security"]
+    color: "#5F9D9F",
   },
   {
     id: 7,
-    title: "Mindful Learning",
-    subtitle: "Adaptive Education Platform",
-    description: "An intelligent learning management system that adapts to individual learning styles, featuring personalized curriculum paths and real-time progress tracking.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop",
-    category: "Web Applications",
-    year: "2023",
-    color: "#f59e0b",
-    tags: ["Vue.js", "Python", "TensorFlow", "PostgreSQL", "WebRTC"]
+    title: "Readwood Cabins",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
+    description: "Readwood Cabins is a modern hotel booking site for browsing and booking rooms with a simple, elegant design.",
+    image: "/public/Images/RedwoodMain.png",
+    category: "Landing pages",
+    year: "2024",
+    color: "#700F10",
   },
   {
     id: 8,
-    title: "EcoTrack Pro",
-    subtitle: "Sustainability Analytics",
-    description: "A comprehensive environmental impact tracking system for businesses, featuring carbon footprint analysis, sustainability reporting, and green initiative management.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop",
+    title: "Gamification Education Website",
+    subtitle: "",
+    description: "Gamification Education Website is a university project designed to teach C programming to first-year students through interactive lessons and challenges. The user-friendly interface supports engagement, progress tracking, and easy navigation for an effective learning experience. This approach helps motivate students by making learning fun and accessible.",
+    image: "/public/Images/GamificationCover.png",
     category: "Web Applications",
     year: "2023",
-    color: "#ef4444",
-    tags: ["Angular", "C#", "Azure", "Power BI", "IoT"]
+    color: "#2E1484",
   },
-  {
-    id: 9,
-    title: "HealthFlow",
-    subtitle: "Telemedicine Platform",
-    description: "A secure telemedicine platform connecting patients with healthcare providers, featuring video consultations, prescription management, and health record integration.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=800&fit=crop",
-    category: "Mobile Apps",
-    year: "2024",
-    color: "#ec4899",
-    tags: ["React", "WebRTC", "HIPAA", "Cloud", "Mobile"]
-  },
-  {
-    id: 10,
-    title: "Stellar Logistics",
-    subtitle: "Supply Chain Optimization",
-    description: "An AI-powered logistics platform that optimizes supply chain operations, featuring real-time tracking, predictive analytics, and automated route optimization.",
-    image: "https://images.unsplash.com/photo-1566041510473-9c3d50e9b7bb?w=1200&h=800&fit=crop",
-    category: "Web Applications",
-    year: "2024",
-    color: "#8b5cf6",
-    tags: ["React", "AI/ML", "IoT", "Blockchain", "Analytics"]
-  },
-  {
-    id: 11,
-    title: "CreativeStudio Pro",
-    subtitle: "Digital Asset Management",
-    description: "A powerful digital asset management system for creative agencies, featuring AI-powered tagging, collaborative workflows, and brand guideline enforcement.",
-    image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&h=800&fit=crop",
-    category: "Web Applications",
-    year: "2023",
-    color: "#06b6d4",
-    tags: ["React", "AI", "Cloud Storage", "APIs", "Workflow"]
-  },
-  {
-    id: 12,
-    title: "Travel Explore",
-    subtitle: "Adventure Discovery Landing",
-    description: "An immersive landing page experience for adventure travel booking, featuring stunning visual storytelling and seamless booking integration.",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=800&fit=crop",
-    category: "Landing pages",
-    year: "2024",
-    color: "#34d399",
-    tags: ["HTML", "CSS", "JavaScript", "GSAP", "WebGL"]
-  },
-  {
-    id: 13,
-    title: "SaaS Marketing Hub",
-    subtitle: "Product Launch Landing",
-    description: "A high-converting landing page for SaaS product launches, featuring interactive demos, testimonials, and optimized conversion funnels.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
-    category: "Landing pages",
-    year: "2023",
-    color: "#3b82f6",
-    tags: ["React", "Framer Motion", "TypeScript", "Analytics", "A/B Testing"]
-  },
-  {
-    id: 14,
-    title: "FitTracker Pro",
-    subtitle: "Personal Fitness Companion",
-    description: "A comprehensive fitness tracking mobile app with workout planning, nutrition monitoring, and social features to keep users motivated and engaged.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=800&fit=crop",
-    category: "Mobile Apps",
-    year: "2024",
-    color: "#f59e0b",
-    tags: ["React Native", "HealthKit", "Firebase", "Machine Learning", "Social"]
-  },
-  {
-    id: 15,
-    title: "Crypto Portfolio",
-    subtitle: "Investment Tracking App",
-    description: "A sophisticated cryptocurrency portfolio management app featuring real-time price tracking, advanced analytics, and secure wallet integration.",
-    image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&h=800&fit=crop",
-    category: "Mobile Apps",
-    year: "2023",
-    color: "#8b5cf6",
-    tags: ["Flutter", "Blockchain", "Real-time Data", "Security", "Analytics"]
-  }
+  
 ];
 
 const categories = ["All", "Web Applications", "Landing pages", "Mobile Apps"];
