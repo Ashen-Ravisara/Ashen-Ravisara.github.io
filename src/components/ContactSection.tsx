@@ -179,7 +179,7 @@ export function ContactSection() {
 
             {/* Phone */}
             <motion.a
-              href="tel:+1234567890"
+              href="tel:+94763940690"
               className="group relative p-8 bg-white/80 backdrop-blur-xl rounded-3xl border border-gray-200 hover:border-purple-300 transition-all duration-500 overflow-hidden shadow-lg hover:shadow-xl"
               whileHover={{ 
                 scale: 1.03,
