@@ -85,7 +85,7 @@ export function FeaturedProjects({ onNavigateToAllProjects, onExploreProject }: 
   
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"]
+    offset: ["start end", "end start"]
   });
 
   // Pre-calculate all transforms at the top level for consistent hook calls
