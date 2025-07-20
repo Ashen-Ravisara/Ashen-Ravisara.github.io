@@ -27,7 +27,7 @@ export function ScrollingRibbon() {
     "ASHEN RAVISARA",
     "UI/UX DESIGNER",
     "FREELANCER",
-    "PORTFOLIO 2024",
+    "PORTFOLIO 2025",
     "DESIGN EXCELLENCE",
     "CREATIVE SOLUTIONS"
   ];

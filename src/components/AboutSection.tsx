@@ -188,7 +188,7 @@ export function AboutSection() {
             >
               <div className="w-16 h-16 rounded-full overflow-hidden shadow-lg shadow-accent/25 bg-gradient-to-br from-accent-gradient/20 to-purple-600/20 p-0.5">
                 <img 
-                  src="/images/1.png" 
+                  src="/public/images/AR.jpg" 
                   alt="Ashen Ravisara Profile" 
                   className="w-full h-full object-cover rounded-full"
                 />
