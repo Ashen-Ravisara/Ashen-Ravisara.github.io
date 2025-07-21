@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { easeInOut, motion, spring, type Easing } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 interface SplashScreenProps {
@@ -20,7 +20,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           clearInterval(progressInterval);
           return 100;
         }
-        
+
         // Variable speed - slower at start and end, faster in middle
         let increment = 1;
         if (prev < 20) increment = 0.8; // Slower start
@@ -28,7 +28,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         else if (prev < 60) increment = 2; // Fastest
         else if (prev < 80) increment = 1.2; // Slow down
         else increment = 0.6; // Very slow finish
-        
+
         return Math.min(prev + increment, 100);
       });
     }, 35);
@@ -58,12 +58,11 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
   }, [onComplete]);
 
   // Enhanced easing curves
-  const smoothEase = [0.25, 0.1, 0.25, 1];
-  const bounceEase = [0.68, -0.55, 0.265, 1.55];
-  const elegantEase = [0.4, 0, 0.2, 1];
+  const smoothEase: Easing = [0.25, 0.1, 0.25, 1];
+  const elegantEase: Easing = [0.4, 0, 0.2, 1];
 
   const containerVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       scale: 0.95,
     },
@@ -72,7 +71,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       scale: 1,
       transition: {
         duration: 1,
-        ease: elegantEase,
+        ease: easeInOut,
         staggerChildren: 0.2,
         delayChildren: 0.3,
       },
@@ -83,14 +82,14 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       y: -20,
       transition: {
         duration: 0.8,
-        ease: elegantEase,
+        ease: easeInOut,
       },
     },
   };
 
   const titleVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 80,
       scale: 0.7,
       rotateX: 20,
@@ -101,7 +100,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       scale: 1,
       rotateX: 0,
       transition: {
-        type: "spring",
+        type: spring,
         stiffness: 80,
         damping: 25,
         mass: 1.2,
@@ -111,8 +110,8 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
   };
 
   const loadingVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 40,
       scale: 0.9,
     },
@@ -121,7 +120,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       y: 0,
       scale: 1,
       transition: {
-        type: "spring",
+        type: spring,
         stiffness: 100,
         damping: 20,
         delay: 0.6,
@@ -140,10 +139,10 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     >
       {/* Enhanced background with smoother animations */}
       <div className="background-texture" />
-      
+
       {/* Smoother atmospheric effects */}
       <div className="fixed inset-0 z-0">
-        <motion.div 
+        <motion.div
           className="absolute inset-0 opacity-20"
           animate={{
             rotate: [0, 360],
@@ -155,7 +154,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           }}
         >
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent/10 via-transparent to-purple-500/10" />
-          <motion.div 
+          <motion.div
             className="absolute top-1/4 right-0 w-3/4 h-3/4 bg-gradient-to-bl from-blue-500/15 via-transparent to-transparent rounded-full blur-3xl"
             animate={{
               scale: [1, 1.2, 1],
@@ -167,7 +166,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
               ease: "easeInOut",
             }}
           />
-          <motion.div 
+          <motion.div
             className="absolute bottom-0 left-1/4 w-2/3 h-2/3 bg-gradient-to-tr from-indigo-500/15 via-transparent to-transparent rounded-full blur-3xl"
             animate={{
               scale: [1, 1.3, 1],
@@ -209,7 +208,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         </div>
 
         {/* Enhanced atmospheric glows */}
-        <motion.div 
+        <motion.div
           className="absolute top-20 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.4, 1],
@@ -221,7 +220,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             ease: "easeInOut",
           }}
         />
-        <motion.div 
+        <motion.div
           className="absolute bottom-32 right-32 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.5, 1],
@@ -239,7 +238,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       <div className="text-center relative z-10">
         {/* Enhanced title with smoother animation */}
         <motion.div variants={titleVariants}>
-          <motion.h1 
+          <motion.h1
             className="text-6xl md:text-8xl font-black tracking-tighter mb-20 text-accent-gradient"
             animate={{
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -251,11 +250,11 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             }}
             whileHover={{
               scale: 1.03,
-              transition: { 
-                type: "spring", 
-                stiffness: 400, 
+              transition: {
+                type: "spring",
+                stiffness: 400,
                 damping: 25,
-                duration: 0.4 
+                duration: 0.4
               }
             }}
           >
@@ -314,14 +313,14 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                 backgroundSize: "200% 100%",
               }}
               initial={{ width: "0%" }}
-              animate={{ 
+              animate={{
                 width: `${progress}%`,
                 backgroundPosition: ["0% 50%", "200% 50%"],
               }}
-              transition={{ 
-                width: { 
-                  duration: 0.3, 
-                  ease: smoothEase 
+              transition={{
+                width: {
+                  duration: 0.3,
+                  ease: smoothEase
                 },
                 backgroundPosition: {
                   duration: 2,
@@ -330,7 +329,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                 }
               }}
             />
-            
+
             {/* Shimmer effect */}
             <motion.div
               className="absolute left-0 top-0 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full"
@@ -353,7 +352,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
               initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               exit={{ opacity: 0, y: -20, filter: "blur(4px)" }}
-              transition={{ 
+              transition={{
                 duration: 0.6,
                 ease: elegantEase,
               }}
@@ -396,7 +395,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           }}
           className="absolute top-1/4 left-1/4 w-3 h-3 bg-accent-gradient-radial rounded-full opacity-40"
         />
-        
+
         <motion.div
           animate={{
             rotate: [360, 0],
@@ -432,7 +431,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           }}
           className="absolute top-1/3 right-1/5 w-2 h-2 bg-accent-gradient-warm rounded-full"
         />
-        
+
         <motion.div
           animate={{
             x: [-8, 8, -8],

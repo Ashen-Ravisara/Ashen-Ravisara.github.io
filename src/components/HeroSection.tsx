@@ -1,11 +1,9 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { motion, spring, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { useEffect } from 'react';
 
 export function HeroSection() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -58,7 +56,7 @@ export function HeroSection() {
       scale: 1,
       rotateX: 0,
       transition: {
-        type: "spring",
+        type: spring,
         stiffness: 200,
         damping: 15,
         mass: 0.8,
@@ -88,7 +86,7 @@ export function HeroSection() {
       y: 0,
       scale: 1,
       transition: {
-        type: "spring",
+        type: spring,
         stiffness: 120,
         damping: 20,
         mass: 1,
@@ -109,8 +107,6 @@ export function HeroSection() {
           transformStyle: "preserve-3d",
         }}
         className="text-center z-10 perspective-1000"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         variants={containerVariants}
         initial="hidden"
         animate="visible"

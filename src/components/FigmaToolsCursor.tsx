@@ -162,7 +162,7 @@ export function FigmaToolsCursor() {
   
   const lastMousePosition = useRef<MousePosition>({ x: 0, y: 0 });
   const lastUpdateTime = useRef<number>(0);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number>(0);
   const particleIdRef = useRef<number>(0);
 
   // Vibrant color palette for flowing particles
@@ -337,7 +337,7 @@ export function FigmaToolsCursor() {
       const deltaTime = Math.min((now - lastUpdateTime.current) / 1000, 0.016);
       
       setFlowingParticles(prev => {
-        let newParticles = [...prev];
+        const newParticles = [...prev];
         
         // Generate new flowing particles continuously
         if (now - lastParticleTime > particleInterval && velocity.speed > 5) {
@@ -514,7 +514,7 @@ export function FigmaToolsCursor() {
                 }}
               >
                 <path
-                  d={`M ${particle.trail.map((point, i) => 
+                  d={`M ${particle.trail.map((point) => 
                     `${point.x - particle.x + 50} ${point.y - particle.y + 50}`
                   ).join(' L ')}`}
                   stroke={particle.color}
