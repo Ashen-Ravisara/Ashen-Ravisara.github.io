@@ -219,10 +219,10 @@ export function ContactSection() {
             transition={{ duration: 0.8, delay: 1.0 }}
           >
             {[
-              { icon: "linkedin", href: "https://linkedin.com", label: "LinkedIn", color: "bg-blue-100 hover:bg-blue-200 text-blue-600" },
-              { icon: "behance", href: "https://behance.com", label: "Behance", color: "bg-indigo-100 hover:bg-indigo-200 text-indigo-600" },
-              { icon: "facebook", href: "https://facebook.com", label: "Facebook", color: "bg-blue-100 hover:bg-blue-200 text-blue-600" },
-              { icon: "instagram", href: "https://instagram.com", label: "Instagram", color: "bg-purple-100 hover:bg-purple-200 text-purple-600" }
+              { icon: "linkedin", href: "https://www.linkedin.com/in/ashen-ravisara/", label: "LinkedIn", color: "bg-blue-100 hover:bg-blue-200 text-blue-600" },
+              { icon: "behance", href: "https://www.behance.net/ashenravisara", label: "Behance", color: "bg-indigo-100 hover:bg-indigo-200 text-indigo-600" },
+              { icon: "facebook", href: "https://web.facebook.com/ashen.ravisara.5", label: "Facebook", color: "bg-blue-100 hover:bg-blue-200 text-blue-600" },
+              { icon: "instagram", href: "https://www.instagram.com/_ash__en_/", label: "Instagram", color: "bg-purple-100 hover:bg-purple-200 text-purple-600" }
             ].map((social, index) => (
               <motion.a
                 key={social.icon}
