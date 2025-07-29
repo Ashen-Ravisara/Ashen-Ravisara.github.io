@@ -39,7 +39,34 @@ interface ProjectPageProps {
 // Project content mapping
 const getProjectContent = (project: Project) => {
   switch (project.id) {
-    case 1: // Bloo Tour & Tourism
+    case 1: // Prime Reality
+      return {
+        title: "Prime Reality",
+        client: "LumetriX Solutions (Pvt).Ltd",
+        // teamMember: "Ashen Ravisara - Lead UI/UX Designer",
+        year: "2025",
+        // description: "A revolutionary tourism platform showcasing stunning destinations with immersive digital experiences, ancient temples, and cultural heritage sites.",
+        fullDescription: "The goal of this project is to redesign an asset management dashboard for a company that handles physical and digital assets used in research and development (R&D) processes. The dashboard should allow R&D teams to easily track and manage various assets . The design focuses on creating a user-friendly interface that provides clear visibility into asset status, location, and usage history. Key features include intuitive navigation, real-time updates, and detailed asset information to enhance operational efficiency and decision-making. The project aims to streamline asset management processes, reduce downtime, and improve overall productivity within R&D teams.",
+        mainImage: "/images/PrimeRealityCover.png",
+        designProcess: [
+          {
+            title: "Colors",
+            description: "Defining the Visual Identity – Establishing a color palette that enhances usability, brand consistency, and accessibility across all banking platforms.",
+            image: "/images/PrimeRealityColors.png"
+          },
+          {
+            title: "Design System & Components",
+            description: "Building Consistency – Creating a scalable design system with reusable UI components, typography, and styles for a unified digital experience.",
+            image: "/images/PrimeRealityDesignSystem.png"
+          },
+          {
+            title: "Web Design",
+            image: "/images/PrimeRealityCoverUI.png"
+          }
+        ]
+      };
+
+    case 2: // Bloo Tour & Tourism
       return {
         title: "Bloo Tour & Tourism",
         client: "LumetriX Solutions (Pvt).Ltd",
@@ -56,7 +83,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 2: // LumetriX Solution Landing page
+    case 3: // LumetriX Solution Landing page
       return {
         title: "LumetriX Solutions Landing page",
         // client: "Retail Innovations Inc.",
@@ -73,7 +100,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 3: // Artigala Ayurveda
+    case 4: // Artigala Ayurveda
       return {
         title: "Artigala Ayurveda",
         client: "LumetriX Solutions (Pvt.)Ltd",
@@ -89,7 +116,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 4: // Recruitment Agency Web Application
+    case 5: // Recruitment Agency Web Application
       return {
         title: "Recruitment Agency Web Application",
         client: "Syntax Erreur (Pvt.)Ltd",
@@ -120,7 +147,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 5: // Infinity Day Planner Web Application
+    case 6: // Infinity Day Planner Web Application
       return {
         title: "Infinity Day Planner Web Application",
         client: "Codelantic (Pvt.)Ltd",
@@ -146,7 +173,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 6: // Ebos Web Application
+    case 7: // Ebos Web Application
       return {
         title: "EBOS Web Application",
         client: "Codelantic (Pvt.)Ltd",
@@ -172,7 +199,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 7: // Redwood Cabins Landing Page
+    case 8: // Redwood Cabins Landing Page
       return {
         title: "Readwood Cabins",
         client: "Metafuse (Pvt.)Ltd",
@@ -188,7 +215,7 @@ const getProjectContent = (project: Project) => {
         ]
       };
 
-    case 8: // Gamification Education Website
+    case 9: // Gamification Education Website
       return {
         title: "Gamification Education Website",
         // client: "Metafuse (Pvt.)Ltd",

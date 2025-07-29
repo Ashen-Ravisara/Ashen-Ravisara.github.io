@@ -7,6 +7,16 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const projects = [
   {
     id: 1,
+    title: "Prime Reality",
+    subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
+    category: "Web Applications",
+    year: "2025",
+    image: "/images/PrimeRealityCover.png",
+    color: "#2563eb",
+    description: "The goal of this project is to redesign an asset management dashboard for a company that handles physical and digital assets used in research and development (R&D) processes. The dashboard should allow R&D teams to easily track and manage various assets.",
+  },
+  {
+    id: 2,
     title: "Bloo Tour & Tourism",
     subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
     category: "Landing Pages",
@@ -16,7 +26,7 @@ const projects = [
     description: "Bloo Tour & Tourism is a responsive website that showcases Sri Lanka’s attractions with easy navigation and essential travel info.",
   },
   {
-    id: 2,
+    id: 3,
     title: "LumetriX Solution Landing page",
     subtitle: "Tool : Figma Make (AI-powered design)",
     category: "Landing Pages",
@@ -26,7 +36,7 @@ const projects = [
     description: "LumetriX Solutions is a modern portfolio website showcasing IT services with a clean, responsive design built using Figma Make.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Artigala Ayurveda",
     subtitle: "All rights reserved by LumetriX Solutions (Pvt.)Ltd",
     category: "Web Applications",
@@ -36,7 +46,7 @@ const projects = [
     description: "Artigala Ayurveda is a nature-inspired e-commerce website for Ayurvedic products, offering easy browsing, detailed info, and a smooth shopping experience.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Recruitment Agency Web Application",
     subtitle: "All rights reserved by Syntax Erreur (Pvt.)Ltd",
     category: "Web Applications",
@@ -50,7 +60,7 @@ const projects = [
 // Additional projects for "See More" functionality
 const additionalProjects = [
   {
-    id: 5,
+    id: 6,
     title: "Infinity Day Planner Web Application",
     subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
     category: "Web Applications",
@@ -60,7 +70,7 @@ const additionalProjects = [
     description: "IDP is a smart day planner for a Swaziland client featuring Manager and Staff portals for streamlined scheduling, work orders, route planning, and more.",
   },
   {
-    id: 6,
+    id: 7,
     title: "EBOS Web Application",
     subtitle: "All rights reserved by Codelantic (Pvt.)Ltd",
     category: "Web Applications",
